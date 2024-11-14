@@ -1,6 +1,6 @@
 {
   "id": "npc-generator-gpt",
-  "title": "NPC Generator (GPT) D&D 5e",
+  "title": "NPC Generator (GPT) D&D 5e - Zarthuga Fork",
   "description": "NPC generator for D&D5e powered by ChatGPT",
   "version": "1.5.5",
   "compatibility": {

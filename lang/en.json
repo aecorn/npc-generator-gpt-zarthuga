@@ -63,7 +63,6 @@
         },
         "race": {
             "label": "Race",
-            "dragonborn": "Dragonborn",
             "dwarf-common": "Dwarf",
             "dwarf-hill": "Hill Dwarf",
             "dwarf-mountain": "Mountain Dwarf",
@@ -78,9 +77,26 @@
             "halfling-common": "Halfling",
             "halfling-lightfoot": "Lightfoot Halfling",
             "halfling-stout": "Stout Halfling",
-            "halforc": "Half-Orc",
             "human": "Human",
-            "tiefling": "Tiefling"
+            "tiefling": "Tiefling",
+            "auromedusae": "Auromedusae",
+            "entkin": "Entkin",
+            "gargil": "Gargil",
+            "librarian": "Librarian",
+            "limagi": "Limagi",
+            "nokkans": "Nøkkans",
+            "platynix": "Platynix",
+            "trollkin": "Trollkin",
+            "dinoborn-attacker": "Dinoborn Attacker",
+            "dinoborn-flyer": "Dinoborn Flyer",
+            "dinoborn-scout": "Dinoborn Scout",
+            "dinoborn-defender": "Dinoborn Defender",
+            "dwarf-glacier": "Glacier Dwarf",
+            "dwarf-magma": "Magma Dwarf",
+            "elf-arch": "Archelf",
+            "gnome-sky": "Sky Gnome",
+            "halfling-leafwalker": "Leafwalker Halfling"
+
         },
         "subtype": {
             "label": "Job",
