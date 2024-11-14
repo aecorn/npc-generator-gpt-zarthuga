@@ -3,15 +3,22 @@ export class npcGenGPTDataStructure {
     static typeList = ['commoner', 'npc'];
     static genderList = ['male', 'female'];
     static raceList = [
-        'dragonborn',
-        'dwarf-common', 'dwarf-hill', 'dwarf-mountain',
-        'elf-common', 'elf-high', 'elf-wood', 'drow',
-        'gnome-common', 'gnome-forest', 'gnome-rock',
+        'dinoborn-attacker', 'dinoborn-flyer', 'dinoborn-scout', 'dinoborn-defender',
+        'dwarf-common', 'dwarf-hill', 'dwarf-mountain', 'dwarf-glacier', 'dwarf-magma',
+        'elf-common', 'elf-city', 'elf-wood', 'drow', 'elf-arch',
+        'gnome-common', 'gnome-forest', 'gnome-rock', 'gnome-sky',
         'halfelf',
-        'halfling-common', 'halfling-lightfoot', 'halfling-stout',
-        'halforc',
+        'halfling-common', 'halfling-lightfoot', 'halfling-stout', 'halfling-leafwalker',
+        'trollkin',
         'human',
-        'tiefling'
+        'tiefling',
+        'auromedusae',
+        'entkin',
+        'gargil',
+        'librarian',
+        'limagi',
+        'nokkans',
+        'platynix',
     ];
     static commonerList = [
         'alchemist', 'baker', 'barkeep', 'blacksmith', 'butcher', 'carpenter',
@@ -32,24 +39,31 @@ export class npcGenGPTDataStructure {
     }
 
     static languagesList = [
-        "aarakocra", "abyssal", "aquan", "auran", "celestial", "common", 
-        "draconic", "druidic", "elvish", "deep", "cant", "giant", "gith",
+        "abyssal", "aquan", "auran", "celestial", "common", 
+        "druidic", "elvish", "deep", "cant", "giant", "gith",
         "gnoll", "gnomish", "goblin", "halfling", "ignan", "infernal",
-        "dwarvish", "orc", "primordial", "sylvan", "undercommon", "terran"
+        "dwarvish", "primordial", "sylvan", "undercommon", "terran", 
+        "trollish", "dinospeech", "platynixian",
     ];
 
     static raceData = {
-        dragonborn: { movement: { walk: 30 }, size: "med", senses: { darkvision: 0 }, lang: ["common", "draconic"] },
+        dinoborn: { movement: { walk: 30 }, size: "med", senses: { darkvision: 0 }, lang: ["common", "dinospeech"] },
         dwarf: { movement: { walk: 25 }, size: "med", senses: { darkvision: 60 }, lang: ["common", "dwarvish"] },
         elf: { movement: { walk: 30 }, size: "med", senses: { darkvision: 60 }, lang: ["common", "elvish"] },
         drow: { movement: { walk: 30 }, size: "med", senses: { darkvision: 120 }, lang: ["common", "elvish"] },
         gnome: { movement: { walk: 25 }, size: "sm", senses: { darkvision: 60 }, lang: ["common", "gnomish"] },
         halfelf: { movement: { walk: 30 }, size: "med", senses: { darkvision: 60 }, lang: ["common", "elvish"] },
         halfling: { movement: { walk: 25 }, size: "sm", senses: { darkvision: 0 }, lang: ["common", "halfling"] },
-        halfling: { movement: { walk: 25 }, size: "sm", senses: { darkvision: 0 }, lang: ["common", "halfling"] },
-        halforc: { movement: { walk: 30 }, size: "med", senses: { darkvision: 60 }, lang: ["common", "orc"] },
+        trollkin: { movement: { walk: 30 }, size: "med", senses: { darkvision: 60 }, lang: ["common", "trollish"] },
         human: { movement: { walk: 30 }, size: "med", senses: { darkvision: 0 }, lang: ["common"] },
-        tiefling: { movement: { walk: 30 }, size: "med", senses: { darkvision: 60 }, lang: ["common", "infernal"] }
+        tiefling: { movement: { walk: 30 }, size: "med", senses: { darkvision: 60 }, lang: ["common", "infernal"] },
+        auromedusae: { movement: { walk: 30, fly: 10, swim: 20 }, size: "med", senses: { truesight: 60 }, lang: ["common", "aquan"] },
+        entkin: { movement: { walk: 30 }, size: "med", senses: { tremorsense: 15 }, lang: ["common", "sylvan", "druidic"] },
+        gargil: { movement: { walk: 30, fly: 30}, size: "med", senses: { darkvision: 60 }, lang: ["common", "terran"] },
+        librarian: { movement: { walk: 30 }, size: "med", senses: { darkvision: 0 }, lang: ["common"] },
+        limagi: { movement: { walk: 30 }, size: "med", senses: { darkvision: 0 }, lang: ["common", "halfling"] },
+        nokkans: { movement: { walk: 30, swim: 20 }, size: "med", senses: { darkvision: 60 }, lang: ["common", "aquan"] },
+        platynix: { movement: { walk: 25, swim: 25 }, size: "sm", senses: { darkvision: 60 }, lang: ["common", "platynixian", "aquan"] },
     };
 
     static subtypeData = {
